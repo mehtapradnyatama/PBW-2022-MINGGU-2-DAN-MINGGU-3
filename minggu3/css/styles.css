@@ -59,7 +59,7 @@ video {
 	overflow:hidden;
 	background:transparent;
 	width:100%;
-	height:7%; /* of figure's height */
+	height:7%; 
 	position:relative;
 }
 .controls[data-state=hidden] {
@@ -148,7 +148,7 @@ video {
 	-moz-border-radius:2px;
 	-webkit-border-radius:2px;
 	border-radius:2px;
-	color:#0095dd; /* Internet Explorer uses this value as the progress bar's value colour */
+	color:#0095dd; 
 }
 .controls progress[data-state="fake"] {
 	background:#e6e6e6;
@@ -163,11 +163,9 @@ video {
 .controls progress::-moz-progress-bar {
 	background-color:#0095dd;
 }
-/* Chrome requires its own rule for this, otherwise it ignores it */
 .controls progress::-webkit-progress-value {
 	background-color:#0095dd;
 }
-/* subtitles menu */
 .subtitles-menu {
 	display:none;
 	position:absolute;
@@ -196,7 +194,6 @@ video {
 	border-radius:2px;
 }
 
-/* WebVTT cues */
 ::cue { 
 	color:#ccc;
 }
@@ -205,7 +202,6 @@ video {
 	background:#0095dd;
 }
 
-/* fullscreen */
 html:-ms-fullscreen {
 	width:100%;
 }
@@ -213,13 +209,12 @@ html:-ms-fullscreen {
 	background-color:transparent;
 }
 video:-webkit-full-screen + .controls {
-	background:#ccc; /* required for Chrome which doesn't heed the transparent value set above */
+	background:#ccc; 
 }
 video:-webkit-full-screen + .controls progress {
 	margin-top:0.5rem;
 }
 
-/* hide controls on fullscreen with WebKit */
 figure[data-fullscreen=true] video::-webkit-media-controls {
 	display:none !important;
 }
@@ -249,7 +244,6 @@ figure[data-fullscreen=true] .controls .progress {
 	width:68%;
 }
 
-/* Media Queries */
 @media screen and (max-width:1024px) {
 	figure {
 		padding-left:0;
@@ -257,7 +251,6 @@ figure[data-fullscreen=true] .controls .progress {
 		height:auto;
 	}
 	.controls {
-		/* we want the buttons to be proportionally bigger, so give their parent a set height */
 		height:30px;
 		height:1.876rem;
 	}
@@ -284,7 +277,6 @@ figure[data-fullscreen=true] .controls .progress {
 		margin-top:2.5rem;
 	}
 	.controls .progress {
-		/*display:table-subtitle;*/ /* this trick doesn't work as elements are floated and the layout doesn't work */
 		position:absolute;
 		top:0;
 		width:100%;

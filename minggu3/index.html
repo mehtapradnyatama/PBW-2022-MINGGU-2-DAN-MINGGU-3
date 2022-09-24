@@ -5,17 +5,13 @@
 	<title>Styled Video Player with Subtitles - Mozilla</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="css/styles.css" />
-	<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv-printshiv.min.js" type="text/javascript"></script><![endif]-->
 </head>
 <body>
-	<h1>Sintel</h1>
+	<h1>Universitas Dian Nuswantoro</h1>
 	<figure id="videoContainer" data-fullscreen="false">
 		<video id="video" controls preload="metadata">
-			<source src="media/video.mp4" type="video/mp4">
-			<source src="video/sintel-short.webm" type="video/webm">
+			<source src="media/y2mate.com - MV IU아이유  Naui Yetnal Iyagi나의 옛날이야기  My old story_1080p.mp4" type="video/mp4">
 			<track label="English" kind="subtitles" srclang="en" src="subtitle/vtt/sintel-en.vtt" default>
-			<track label="Deutsch" kind="subtitles" srclang="de" src="subtitles/vtt/sintel-de.vtt">
-			<track label="Español" kind="subtitles" srclang="es" src="subtitles/vtt/sintel-es.vtt">
 		</video>
 		<div id="video-controls" class="controls" data-state="hidden">
 			<button id="playpause" type="button" data-state="play">Play/Pause</button>
@@ -31,9 +27,6 @@
 			<button id="fs" type="button" data-state="go-fullscreen">Fullscreen</button>
 			<button id="subtitles" type="button" data-state="subtitles">CC</button>
 		</div>
-		<figcaption>
-			&copy; copyright Blender Foundation | <a href="http://www.sintel.org">www.sintel.org</a>
-		</figcaption>
 	</figure>
 	<script src="js/video-player.js"></script>
 </body>

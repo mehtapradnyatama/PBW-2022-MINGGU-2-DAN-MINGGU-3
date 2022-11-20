@@ -1,0 +1,31 @@
+body {
+  background: #35a9db;
+  font-family: roboto;
+  text-align: center;
+}
+h1 {
+  color: #fff;
+}
+.ketengah {
+  margin: 10px auto;
+  width: 1150px;
+}
+.kotak {
+  background: blue;
+  width: 500px;
+  float: left;
+  height: 250px;
+  margin: 30px;
+}
+.gradient1 {
+  background: linear-gradient(red, green);
+}
+.gradient2 {
+  background: linear-gradient(to right, red, yellow, green);
+}
+.gradient3 {
+  background: radial-gradient(red, yellow, green);
+}
+.gradient4 {
+  background: radial-gradient(circle, red, yellow, green);
+}
